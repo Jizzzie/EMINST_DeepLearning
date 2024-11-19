@@ -1,2 +1,13 @@
 # EMINST_DeepLearning
-Implementing CNN on EMINST Dataset and comparing with CNN
+
+### Artificial Neural Networks (ANN):  
+Artificial Neural Networks (ANN) are a class of machine learning models inspired by the human brain's neural structure. ANNs consist of interconnected layers of artificial neurons, each performing simple computations to transform input data into meaningful outputs. Typically, ANNs are composed of an input layer, one or more hidden layers, and an output layer. Each neuron receives weighted inputs, applies an activation function, and passes the result to the next layer. ANNs are versatile and can handle various tasks, such as classification, regression, and clustering, but they do not inherently exploit spatial patterns in data like images.
+
+### Convolutional Neural Networks (CNN):  
+Convolutional Neural Networks (CNNs) are specialized deep learning models designed to process grid-like data such as images. CNNs leverage convolutional layers to automatically extract spatial features like edges, textures, and patterns by applying filters that slide over the input data. They also use pooling layers to reduce the spatial dimensions, making the model computationally efficient while retaining important features. Unlike ANNs, CNNs take advantage of local spatial hierarchies, making them particularly effective for image-related tasks such as object recognition, face detection, and handwritten digit classification.
+
+### EMNIST Dataset:  
+The EMNIST (Extended MNIST) dataset is a collection of handwritten character and digit images derived from the original MNIST dataset. It includes multiple subsets, such as balanced, letters, digits, and more, each containing grayscale 28x28-pixel images. The dataset is widely used for benchmarking image classification models, especially in recognizing characters and digits. Given its structured nature, the EMNIST dataset requires models that can effectively learn spatial and hierarchical features from the images to achieve high accuracy.
+
+### Why CNN is Better Suited for EMNIST than ANN:  
+While ANNs can process the pixel values of images, they treat each pixel independently and fail to capture spatial relationships between neighboring pixels. This limits their effectiveness for tasks like handwritten character recognition, where the arrangement of pixels defines the character. In contrast, CNNs excel in processing image data because they use convolutional layers to identify spatial patterns and pooling layers to reduce computational complexity. These features allow CNNs to extract hierarchical representations, such as edges, corners, and complete shapes, which are critical for understanding handwritten characters in EMNIST. As a result, CNNs typically outperform ANNs on datasets like EMNIST in terms of accuracy and efficiency.
